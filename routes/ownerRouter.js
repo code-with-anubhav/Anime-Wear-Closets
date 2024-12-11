@@ -1,10 +1,8 @@
 const express = require('express');
 const router = express.Router()
 
-router.get("/owner", function(req,res) {
-    console.log("Hello");
-    
-    res.send("Hey")
+router.get("/", function(req,res) {
+    res.send("Hey1")
 })
 
 module.exports = router

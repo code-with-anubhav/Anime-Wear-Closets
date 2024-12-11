@@ -9,4 +9,5 @@ mongoose
     console.error("Database isn't connected", err);
   });
 
-  module.exports = mongoose.connection
+  
+module.exports = mongoose.connection;
