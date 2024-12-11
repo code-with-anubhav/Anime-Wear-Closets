@@ -2,10 +2,12 @@ const express = require("express");
 const app = express();
 const cookieParser = require("cookie-parser");
 const path = require("path");
-const db = require("./config/mongoose-connection");
-const userRouter = require('./routes/userRouter');
-const productRouter = require("./routes/productRouter")
 const ownerRouter = require("./routes/ownerRouter")
+const productRouter = require("./routes/productRouter")
+const userRouter = require('./routes/userRouter');
+
+const db = require("./config/mongoose-connection");
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
